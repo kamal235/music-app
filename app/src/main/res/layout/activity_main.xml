@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="30dp"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kamal.arshmusic.MainActivity"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true">
+
+    <ImageView
+        android:id="@+id/songimage1"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:hint="Song name"
+        android:id="@+id/labelsong"/>
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp">
+
+    <SeekBar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/songseek"
+        android:thumbTint="@color/kaala"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_weight="6"
+        android:onClick="mainPrevious"
+        android:src="@drawable/previous" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_weight="6"
+        android:onClick="mainplay"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_weight="6"
+        android:onClick="mainnext"
+        android:src="@drawable/next" />
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/repeat"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:onClick="mainrepeat"
+        android:src="@drawable/repeat" />
+
+    <ImageView
+        android:id="@+id/stop"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:onClick="mainstop"
+        android:src="@drawable/stop" />
+
+    <ImageView
+        android:id="@+id/shuffle"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:onClick="mainshuffle"
+        android:src="@drawable/shuffle" />
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="30dp"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="20dp"
+        android:id="@+id/volume"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/volume"/>
+
+    <SeekBar
+        android:id="@+id/volumebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:thumbTint="@color/kaala"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SONG LIST"
+        android:textStyle="bold"
+        android:onClick="playlist"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+<!--
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:drawingCacheQuality="high"
+            android:progress="@android:integer/config_mediumAnimTime" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/play1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:background="@drawable/play1"
+            android:onClick="kill2" />
+
+        <Button
+            android:id="@+id/pause1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:background="@drawable/pause1"
+            android:onClick="pause1" />
+
+        <Button
+            android:id="@+id/stop1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:background="@drawable/stop1"
+            android:onClick="stop1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="next"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="previous"
+            android:text="previous" />
+
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:onClick="repeat1"
+        android:text="   Repeat" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:onClick="shuffle1"
+        android:text="   Shuffle" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AutoCompleteTextView" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+-->
+
+
+
+
+
+
+
+

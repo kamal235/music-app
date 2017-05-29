@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "893774057506",
+    "firebase_url": "https://mujikbox.firebaseio.com",
+    "project_id": "mujikbox",
+    "storage_bucket": "mujikbox.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893774057506:android:2d66e6d4274509ca",
+        "android_client_info": {
+          "package_name": "a1694159.mujikbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893774057506-fo89n0i1mvg8gr9vkounhn7hfg42nioi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "a1694159.mujikbox",
+            "certificate_hash": "257544bf16ce9cdcd217cfd199b940853f7c584e"
+          }
+        },
+        {
+          "client_id": "893774057506-1di3kt7neh693roglci1a6psq3rqkuqt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "a1694159.mujikbox",
+            "certificate_hash": "9f6bb4113daad79a638a86b39e09e8205311da6e"
+          }
+        },
+        {
+          "client_id": "893774057506-i6rbr8mq410952f0ckbh8g9k5urmvb5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEua9nR7CaLXPdLaniy8QY27x9JoMx7QY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893774057506-i6rbr8mq410952f0ckbh8g9k5urmvb5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893774057506:android:36cb1ab1a45702f5",
+        "android_client_info": {
+          "package_name": "com.example.kamal.arshmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893774057506-a7um83kt3fsnp3gkp7lhiho0pm04d9ma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kamal.arshmusic",
+            "certificate_hash": "257544bf16ce9cdcd217cfd199b940853f7c584e"
+          }
+        },
+        {
+          "client_id": "893774057506-i6rbr8mq410952f0ckbh8g9k5urmvb5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEua9nR7CaLXPdLaniy8QY27x9JoMx7QY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893774057506-i6rbr8mq410952f0ckbh8g9k5urmvb5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
